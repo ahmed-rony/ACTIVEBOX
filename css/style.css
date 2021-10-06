@@ -1,0 +1,463 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+/* =============   common css   ================ */
+
+:root{
+    --mainfont: 'Raleway', sans-serif;
+    --subfont: 'Opensans', sans-serif;
+    --h-color: #2d3033;
+    --p-color: #6c7279;
+}
+
+.rale-13{
+    font-family: var(--mainfont);
+    font-size: 13px;
+}
+.rale-14{
+    font-family: var(--mainfont);
+    font-size: 14px;
+}
+.rale-22{
+    font-family: var(--mainfont);
+    font-size: 22px;
+}
+
+.bold{
+    font-weight: 700;
+}
+.semi-bold{
+    font-weight: 600;
+}
+.regular{
+    font-weight: 400;
+}
+.text-upper{
+    text-transform: uppercase;
+}
+.text-cap{
+    text-transform: capitalize;
+}
+
+.white{
+    color: #ffffff;
+}
+
+.text-center{
+    text-align: center;
+}
+/* =============   typography   commons */
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.h-color{
+    color: var(--h-color);
+}
+.p-color{
+    color: var(--p-color);
+}
+
+/* ============  body common css   ================== */
+
+nav{
+    height: 100px;
+    position: absolute;
+    width: 100%;
+}
+nav .navbar{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .navbar .logo{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+nav .navbar .nav-list{
+    width: 600px;
+    height: 100px;
+}
+
+nav .navbar .nav-list ul{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .navbar .nav-list ul li a{
+    color: rgba(255, 255, 255, 0.75);
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+nav .navbar .nav-list ul li a:hover{
+    color: #ffffff;
+
+}
+/* ============    navbar ends   ================= */
+
+/* ============   banner   =================== */
+
+#banner{
+    height: 750px;
+    background: url(../images/banner.jpg) no-repeat center;
+}
+#banner .banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+}
+
+#banner .banner h1{
+    font-family: 'Opensans', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0 46px;
+    line-height: 71px;
+}
+#banner .banner p{
+    padding: 32px 120px 75px 120px;
+    line-height: 33px;
+
+}
+#banner .banner h5{
+    background: #e84545;
+    display: inline-block;
+    padding: 0 46px 0 54px;
+    line-height: 46px;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+#banner .banner h5:hover{
+    background: #bb2929;
+
+}
+/* ==============   banner ends   ============= */
+
+/* ==============   feature    ================= */
+
+#feature{
+    height: 450px;
+    background: #f1f1f1;
+    padding: 120px 0;
+}
+#feature .feature{
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+#feature .feature .feature-item{
+    width: 370px;
+    height: 190px;
+    text-align: center;
+}
+#feature .feature .feature-item h4{
+    padding: 34px 0 20px 0;
+}
+#feature .feature .feature-item p{
+    padding: 0 30px;
+}
+/* ===========   feature ends   ================ */
+
+/* ===========   gallery    ================= */
+
+#gallery{
+   display: flex;
+   flex-wrap: wrap;
+}
+#gallery .gallery-item{
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+}
+#gallery .gallery-item img{
+    width: 100%;
+    height: 100%;
+}
+#gallery .gallery-item .overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(232, 69, 69, 0.9);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+#gallery .gallery-item:hover .overlay{
+    top: 0;
+}
+#gallery .gallery-item .overlay p{
+    padding-top: 5px;
+}
+/* =============    gallery ends   ================ */
+
+/* =============   post identity   ================ */
+
+#identity{
+    height: 580px;
+    background: #f1f1f1;
+    padding: 100px 0;
+}
+#identity .identity{
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+}
+#identity .identity .identity-item{
+    width: 270px;
+    height: 580px;
+    background: #eff3f1;
+}
+#identity .identity .identity-item .img{
+    width: 270px;
+    height: 270px;
+}
+#identity .identity .identity-item .img img{
+    width: 100%;
+}
+#identity .identity .identity-item h4{
+    padding: 25px 0 5px 0;
+}
+#identity .identity .identity-item h5{
+    color: #e84545;
+    padding-bottom: 25px;
+}
+#identity .identity .identity-item p{
+    line-height: 21px;
+}
+
+#identity .identity .identity-item i{
+    width: 40px;
+    height: 40px;
+    color: #c6cacc;
+    border: 1px solid #c6cacc;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+#identity .identity .identity-item i:hover{
+    background: #c6cacc;
+    color: #ffffff;
+}
+/* ============   post identity ends    ================ */
+
+/* ==============   feedback   ======================== */
+
+#feedback{
+    height: 500px;
+    background: #53354a;
+    position: relative;
+    z-index: 1;
+}
+#feedback::after{
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: url(../images/feedback.jpg) no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#feedback .feedback{
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+#feedback .feedback .feedback-text{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+#feedback .feedback .feedback-text q{
+    font-family: 'Cardo', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 42px;
+    padding-bottom: 30px;
+    margin-top: -55px;
+    
+}
+#feedback .feedback .feedback-text ul{
+    position: absolute;
+    bottom: 107px;
+    left: 205px;
+}
+#feedback .feedback .feedback-text ul li{
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    float: left;
+    margin-right: 8px;
+    
+}
+#feedback .feedback .feedback-text ul li:last-of-type{
+    margin-right: 0;
+}
+#feedback .feedback .feedback-text ul .active{
+    background: #ffffff;
+}
+/* ==============   feedback ends   ================= */
+
+/* ==============   download    =================== */
+
+#download{
+    height: 145px;
+    padding: 100px 0;
+    background: #f1f1f1;
+    
+}
+#download .download{
+    height: 145px;
+    text-align: center;
+}
+#download .download h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #2d3033;
+}
+#download .download h4{
+    color: #2d3033;
+    padding: 10px 0 40px 0;
+
+}
+#download .download h6{
+    padding: 0 83px;
+    line-height: 45px;
+    background: #e84545;
+    display: inline-block;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+#download .download h6:hover{
+    background: #bb2929;
+
+}
+/* ===============    download ends    =================== */
+
+/* ================   footer    ========================= */
+
+#footer{
+    height: 250px;
+    background: #3a3e64;
+    position: relative;
+
+}
+
+#footer .footer{
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer .footer .footer-item{
+    width: 370px;
+    height: 250px;
+    text-align: center;
+}
+#footer .footer .footer-item h4{
+    padding: 70px 0 15px 0;
+}
+#footer .footer .footer-item p{
+    line-height: 22.5px;
+}
+#footer .footer .item1 p{
+    padding: 0 100px;
+
+}
+#footer .footer .item2 i{
+    width: 40px;
+    height: 40px;
+    color: #c6cacc;
+    border: 1px solid #c6cacc;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 40px;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+#footer .footer .item2 i:hover{
+    background: #c6cacc;
+    color: #ffffff;
+}
+/* ==============   footer ends    =================== */
+
+/* ===============    last footer    ================== */
+
+#last-footer{
+    height: 95px;
+    background: #313454;
+    text-align: center;
+}
+#last-footer footer p{
+    color: #808080;
+    font-family: 'Opensans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+#last-footer footer p span{
+    color: #ffffff;
+}
+#last-footer footer p:first-of-type{
+    padding-top: 25px;
+}
+/* ========================   the end   =============================== */
